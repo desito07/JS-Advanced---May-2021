@@ -1,6 +1,6 @@
 function solve(numbers) {
   return numbers
-    .filter((i) => i % 2 !== 0)
+    .filter((x, i) => i % 2 !== 0)
     .map((x) => x * 2)
     .reverse()
     .join(" ");
