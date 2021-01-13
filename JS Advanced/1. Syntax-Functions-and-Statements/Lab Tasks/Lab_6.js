@@ -8,3 +8,15 @@ function solve(num = 5) {
   }
 }
 solve(5);
+
+function solve(str1, str2) {
+  let n = Number(str1);
+  let m = Number(str2);
+  let sum = 0;
+  for (let i = n; i <= m; i++) {
+    sum += i;
+  }
+  console.log(sum);
+}
+solve("1", "5");
+
