@@ -10,3 +10,9 @@ function solve(str1, str2, str3){
     console.log(avr);
 }
 solve('chocolate', 'ice cream', 'cake');
+
+function solve(str) {
+  console.log(str.length);
+  console.log(str);
+}
+solve("Hello, JavaScript!");
