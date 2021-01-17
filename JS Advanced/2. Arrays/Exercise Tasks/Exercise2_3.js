@@ -9,11 +9,13 @@ function solve(input) {
     }    
     initialNum++;
   });
-  if(arr.length === 0){
-      console.log('Empty');      
-  } else {
-  console.log(arr.join('\n'));
-  }
+  arr.length === 0 ? console.log('Empty') : console.log(arr.join('\n'));
+  
+//   if(arr.length === 0){
+//       console.log('Empty');      
+//   } else {
+//   console.log(arr.join('\n'));
+//   }
 }
 solve(["add", "add", "add", "add"]);
 solve(["add", "add", "remove", "add", "add"]);
