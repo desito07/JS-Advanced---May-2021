@@ -1,13 +1,19 @@
 function solve(input) {
   let result = [];
 
-  for (const inp of input) {
-    let [name, level, items] = inp.split(" / ");
+  input.forEach((x) => {
+    let [name, level, items] = x.split(" / ");
     level = Number(level);
-    items = items ? items.split(", ") : [];
+
+    if(items === undefined){
+        items = [];
+    } else {
+        items = items.split(', ');
+    }
 
     result.push({ name, level, items });
-  }
+  });
+  
   console.log(JSON.stringify(result));
 }
 solve([
