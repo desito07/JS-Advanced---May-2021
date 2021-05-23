@@ -10,3 +10,9 @@ function solve(arr){
     console.log(object);
 }
 solve([ 'Yoghurt', '48', 'Rise', '138', 'Apple', '52' ]);
+*********************************************************************
+    
+function wordUpperCase(input) {
+  return input.toUpperCase().match(/\w+/gim).join(", ");
+}
+console.log(wordUpperCase("Hi, how are you?"));
